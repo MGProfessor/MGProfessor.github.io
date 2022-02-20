@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position display</title>
+    <style>
+        /* *{
+            margin: 0;
+            padding: 0;
+        } */
+        ul{
+            background-color: red;
+            font-size: 2vh;
+        }
+        li{
+            /* display: inline; */
+            list-style: square inside url("contact2.png");
+        }
+        /* .a1 ul{
+            background-color: red;
+        }
+            list-style: lower-latin;
+            list-style: sqare inside;
+        } */
+        header{
+        background-color: black;
+        color:white;
+        height: 70px;
+        z-index: 2;
+        }
+        p{
+            text-align: center;
+            border: 2px solid red;
+        }
+        .container{
+            background-color: aqua;
+            height: 50vh;
+            width: 50vw;
+            margin: auto;
+            z-index: 1;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: green;
+            position: relative;
+            /* top: 45px; */
+            position: absolute;
+        }
+        .box2{
+            height: 200px;
+            width: 200px;
+            background-color: rgb(114, 13, 161);
+            /* position: absolute; */
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+        <ul>
+            <li>HOME</li>
+            <li>About</li>
+            <li>Contacts</li>
+        </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Nisi alias quidem beatae nam nesciunt dolor soluta atque sapiente,
+            quaerat sequi porro provident praesentium, magni facilis sed ut. Voluptas ducimus
+            quia odit quam id exercitationem.
+        </p>
+        <div class="box">
+            like i am a box
+        </div>
+        <div class="box2">
+            i am a box 2
+        </div>
+    </div>
+    <div class="a1">
+        <ul>
+            <li>apple </li>
+            <li>banana</li>
+            <li>mouse</li>
+        </ul>
+    </div>
+</body>
+</html>
